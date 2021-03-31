@@ -1,0 +1,21 @@
+pipeline{
+    agent any
+    stages{
+        stage("Hello"){
+            steps{
+                echo "well come to enkins pipeline stage Hello"
+            }
+        }
+          stage("Hello1"){
+            steps{
+                echo "well come to enkins pipeline stage Hello1"
+            }
+        }
+        
+          stage("Hello2"){
+            steps{
+                echo "well come to enkins pipeline stage hello2"
+            }
+        }
+    }
+}
