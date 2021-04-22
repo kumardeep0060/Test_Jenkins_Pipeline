@@ -10,7 +10,7 @@ pipeline {
         stage('install') {
             steps {
                 echo "Hello 2nd stage"
-                /yum install httpd -y
+                //yum install httpd -y
             }
         }
         stage('start service') {
