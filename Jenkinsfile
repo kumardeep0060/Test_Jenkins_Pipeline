@@ -4,7 +4,7 @@ pipeline {
         stage('check service') {
             steps {
                 echo "Hello Ist stage"
-                sh 'sudo service httpd status'
+                sh rm -rf test
             }
         }
         stage('install') {
