@@ -23,7 +23,7 @@ pipeline {
             steps {
                 echo "Hello final stage"
                 sh systemctl enable httpd
-                echo "Hello from $(hostname -f)" > /var/www/html/index.html
+                //echo "Hello from $(hostname -f)" > /var/www/html/index.html
             }
         }
     }
