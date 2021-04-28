@@ -4,6 +4,10 @@ pipeline {
         stage('check service') {
             steps {
                 echo "Hello Ist stage"
+                sh '''
+                    ls -lah
+                    rm -rf test
+                '''
                 //sudo rm -rf test
             }
         }
