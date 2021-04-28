@@ -4,7 +4,7 @@ pipeline {
         stage('check service') {
             steps {
                 echo "Hello Ist stage"
-                sh 'rm -rf test'
+                sudo rm -rf test
             }
         }
         stage('install') {
