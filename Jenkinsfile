@@ -14,6 +14,9 @@ pipeline {
         stage('install') {
             steps {
                 echo "Hello 2nd stage"
+                sh '''
+                   yum install httpd -y
+                '''
                 //yum install httpd -y
             }
         }
